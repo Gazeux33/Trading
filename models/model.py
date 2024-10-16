@@ -100,6 +100,6 @@ class Transformer(nn.Module):
 model = Transformer(n_embed=5, n_head=5, block_size=70, n_block=4, n_pred=10)
 batch = torch.rand((32, 70, 5))
 output, _ = model(batch)
-print(output.shape)  # Should output: torch.Size([4, 10])
+print(output.shape)
 
 
